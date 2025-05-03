@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+        }
+        .container{
+            text-align: center;
+            margin-top: 100px;
+            background-color:rgba(255, 255, 255, 0.178);
+            width: 400px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        .container input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc2c;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-left: 24%;
+  height: 30px;
+  background: transparent;
+  border-color: yellowgreen;
+  color: aliceblue;
+  
+        }
+        .name{
+            margin-top: 10px;
+        }
+        .container img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+        .container button{
+         width: 200px;
+         background: rgb(195, 236, 13);
+         border: none;
+         height: 40px;
+         margin-top: 50px;
+         transition: 0.3s;
+         cursor: pointer;
+         color: aliceblue;
+        }
+        .describe{
+            margin-top: 40px;
+        }
+        .container button:hover{
+            background-color: rgb(19, 22, 19);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="img1.jpg" alt="">
+        </div>
+        <h3>My profile</h3>
+        <form>
+            <div class="name">
+            Name:
+        <input type="text" placeholder="yourname" required>
+        </div>
+        <div class="describe">
+        describe your self
+        <input type="text" placeholder="bio" required>
+        </div>
+        <button type="submit">send</button>
+        </form>
+    </div>
+</body>
+</html>
